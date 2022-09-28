@@ -1,4 +1,5 @@
 import random
+print("Welcome To Rock Paper Scissor Game")
 print("Winning Rules of the Rock paper scissor game as follows: \n"
                                 +"Rock vs paper->paper wins \n"
                                 + "Rock vs scissor->Rock wins \n"
@@ -28,15 +29,10 @@ while True:
         comp_choice_name = 'scissor'
          
     print("Computer choice is: " + comp_choice_name)
- 
     print(choice_name + " V/s " + comp_choice_name)
- 
-    # condition for winning
-    if((choice == 1 and comp_choice == 2) or
-      (choice == 2 and comp_choice ==1 )):
+    if((choice == 1 and comp_choice == 2) or (choice == 2 and comp_choice ==1 )):
         print("paper wins => ", end = "")
-        result = "paper"
-         
+        result = "paper"     
     elif((choice == 1 and comp_choice == 3) or
         (choice == 3 and comp_choice == 1)):
         print("Rock wins =>", end = "")
@@ -45,11 +41,13 @@ while True:
         print("scissor wins =>", end = "")
         result = "scissor"
     if result == choice_name:
-        print("<== User wins ==>")
+        print("Congratulations!! You Won")
     else:
-        print("<== Computer wins ==>")
+        print("You lose!!")
     print("Do you want to play again? (y/n)")
+    print("press :y for 'yes'")
+    print("press :n for 'no'")
     ans = input()
     if ans == 'n' or ans == 'N':
         break
-print("\nThanks for playing")
+print("Thanks for playing")
